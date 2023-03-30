@@ -23,3 +23,12 @@ for i in range(num_points):
     upload_speed.append(upload_speed)
     # pause for 5 seconds between datat points
     time.sleep(5)
+
+# plot data
+plt.plot(time, download_speed, label="Download Speed (Mbps)")
+plt.plot(times, upload_speed, label="Download Speed (Mbps)")
+plt.legend()
+plt.xlabel('Time')
+plt.ylabel("Speed (Mbps)")
+plt.title("Internet Speed Test")
+plt.show()
